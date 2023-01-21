@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="websitelogo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./emi.html">EMI Caluculation</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="./images/mobile1.png" alt="" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="./images/camera.png" alt="camera">
+                    <div>
+                        <h2>camera</h2>
+                        <p>34 MP</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="./images/processor.png" alt="camera">
+                    <div>
+                        <h2>Processor</h2>
+                        <p>SnapDragon</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="./images/display.png" alt="camera">
+                    <div>
+                        <h2>Display</h2>
+                        <p>7.5 inch</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="./images/battery.png" alt="camera">
+                    <div>
+                        <h2>Battery</h2>
+                        <p> 5000mAh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="./images/arrow.png" alt="uparrow" id="upbtn">
+            <h2>Features</h2>
+            <img src="./images/arrow.png" alt="downarrow" id="dwbtn">
+        </div>
+    </div>
+    <script>
+        var circle=document.getElementById("circle");
+        var upbtn=document.getElementById("upbtn");
+        var dwbtn=document.getElementById("dwbtn");
+        var rotateValue=circle.style.transform;
+        var rotatesum;
+
+        upbtn.onclick=function(){
+            rotatesum=rotateValue+"rotate(-90deg)";
+            circle.style.transform=rotatesum;
+            rotateValue=rotatesum;
+        }
+        dwbtn.onclick=function(){
+            rotatesum=rotateValue+"rotate(90deg)";
+            circle.style.transform=rotatesum;
+            rotateValue=rotatesum;
+        }
+    </script>
+</body>
+</html>

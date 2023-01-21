@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="websitelogo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./emi.html">EMI Caluculation</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="products">
+            <div class="cart">
+                <h1>Cart</h1>
+                <h1 id="cart">0</h1>
+                <h1>Amount</h1>
+                <h1 id="total">0</h1>
+            </div>
+            <div class="product">
+                <img src="./images/iphone13.jpg" alt="">
+                <div class="price">
+                    <h1 id="phone_name">Iphone 13</h1>
+                    <h3>1,30,000</h3>
+                    <div class="cart_value">
+                        <button id="add_pro1" class="add">add</button>
+                        <h2 id="pro1">0</h2>
+                        <button id="delete_pro1" class="subtract">delete</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="product">
+                <img src="./images/iphone12.jpg" alt="">
+                <div class="price">
+                    <h1 id="phone_name">Iphone 12</h1>
+                    <h3>1,00,000</h3>
+                    <div class="cart_value">
+                        <button id="add_pro2" class="add">add</button>
+                        <h2 id="pro2">0</h2>
+                        <button id="delete_pro2" class="subtract">delete</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="./cart.js"></script>
+</body>
+</html>

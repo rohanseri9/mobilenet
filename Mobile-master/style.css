@@ -1,0 +1,287 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+    /* background-color: blueviolet; */
+    background: linear-gradient(to right,#9c27b0,#8ecdff);
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+.mobile{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+}
+#circle{
+width: 1000px;
+height: 1000px;
+position: absolute;
+top: 0;
+left: 0;
+border-radius: 50%;
+transform: translateY(0deg);
+transition: 1s;
+}
+.feature{
+    position: absolute;
+    display: flex;
+    color: white;
+}
+.feature img{
+    width: 70px;
+    
+}
+.feature div{
+    margin-left: 30px;
+
+}
+.feature div p{
+    margin-top: 8px;
+}
+.overlay{
+    width: 0%;
+    height: 0%;
+    border-top: 500px solid white;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid white;
+    border-left: 500px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.one{
+    top:450px;
+    right: 50px;
+}
+.two{
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(-270deg);
+}
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.controls h2{
+    margin: 15px 0;
+color: white;
+
+}
+#upbtn{
+    width: 15px;
+    cursor: pointer;
+
+}
+#dwbtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.product{
+    display: flex;
+    padding:20px;
+    margin:20px
+}
+.emi{
+    display: flex;
+    margin-left: 100px;
+}
+.middle_part{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.middle_part form{
+    margin-left: 100px;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    background-color: rgb(223, 212, 212);
+    opacity: 0.8;
+}
+.middle_part form button{
+    
+    margin-top: 10px;
+    height: auto;
+    width: 100px;
+    background-color: rgb(22, 231, 22);
+    border: none;
+    border-radius: 10px;
+}
+.cart_value{
+    display: flex;
+    
+    margin: 10px;
+}
+.cart_value button{
+    height: 50px;
+    width: 60px;
+    border: 1px solid;
+}
+
+.subtract{
+    background-color: red;
+    color: white;
+}
+.add{
+    background-color: green;
+    color: white;
+}
+.add:hover{
+    background-color: rgb(17, 222, 17);
+    
+}
+.subtract:hover{
+    background-color: rgb(220, 81, 81);
+}
+.cart{
+    
+    text-align: center;
+}
+.price{
+    margin: 10px;
+}
+#phone_name{
+    color: rgb(47, 37, 37);
+}
+.contact{
+    display: flex;
+    align-items: center;
+justify-content: center;
+font-family: monospace;
+color: #f4f4f4;
+margin-top: 100px;
+
+
+}
+.contactform{
+    width: auto;
+    height: auto;
+text-align: center;
+ background-color: rgb(35, 35, 35);
+ opacity: 0.;
+ font-family: monospace;
+ padding: 20px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10px;
+
+    
+}
+.lastname{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.contactdetil{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10px;
+    
+}
+.phonenumber{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.detils{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+
+}
+.subject{
+    margin-left: 10px;
+}
+.button{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: #f4f4f4;
+}
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(4, 223, 248, 0.982), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: lightgreen;
+    color: darkred;
+}
+.accessories{
+    display: flex;
+    padding:20px;
+    margin:20px
+}
+.cost{
+    margin: 10px;
+}
+.input:hover{
+    box-shadow: 0 12px 16px 0 rgba(4, 223, 248, 0.982), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
