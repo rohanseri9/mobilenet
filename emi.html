@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="websitelogo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./emi.html">EMI Caluculation</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="middle_part">
+            <form>
+                Enter Loan Amount:<input type="number" id="loan_amount"><br>
+                Tenure in months: <input type="number" id="months"><br>
+                Interest Rate: <input type="number" id="interest_rate"><br>
+                <button id="btn" type="submit" >Submit</button>
+            </form>
+            <div class="emi">
+                <h1>Your EMI will be :-</h2>
+                <h1 id="amu">0</h1>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
